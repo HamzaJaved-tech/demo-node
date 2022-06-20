@@ -3,7 +3,7 @@ const express = require("express");
 
  const port =    process.env.PORT || 3000;
 
-app.use('/',(res,req)=>{
+app.use('/',(req,res)=>{
      res.send("Hello World");
 });
 
