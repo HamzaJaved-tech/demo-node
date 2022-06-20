@@ -1,5 +1,8 @@
 const express = require("./express/app");
+ const app = express();
 
-const sequelize = require("./sequelize/index");
+app.use('/',(res,req)=>{
+     res.send("Hello World");
+});
 
-express.listen(3000);
+ app.listen(3000);
